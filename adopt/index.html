@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adoption Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Adoption Form</h1>
+          </div>
+          <div class="panel-body">
+            <form action="adoption.php" method="post">
+              <div class="form-group">
+                <label for="volunteer">Adopter Name</label>
+                <input type="text" name="volunteer" />
+              </div>
+              <div class="form-group">
+                <label for="breed">Breed</label>
+                <select
+                  name="breed"
+                  id=""
+                  class="custom-select select"
+                  required
+                >
+                  <option value="">Select an option</option>
+                  <option value="german_shepherd">German Shepherd</option>
+                  <option value="bulldog">Bulldog</option>
+                  <option value="poodle">Poodle</option>
+                  <option value="husky">Husky</option>
+                  <option value="labrador">Labrador</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="" class="control-label">Gender</label>
+                <select
+                  name="gender"
+                  id=""
+                  class="custom-select select"
+                  required
+                >
+                  <option value="">Select an option</option>
+                  <option value="m">Male</option>
+                  <option value="f">Female</option>
+                </select>
+              </div>
+              <input
+                type="submit"
+                name="submit"
+                value="submit"
+                class="btn btn-primary"
+              />
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; Paws On Parade</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <button
+          type="button"
+          class="ml-2 mb-1 close"
+          data-dismiss="toast"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
